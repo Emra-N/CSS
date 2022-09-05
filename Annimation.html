@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="nuo"></div>
+</body>
+</html>
+<style>
+    .box{
+        width: 200px;
+        height:100px;
+        background:red;
+       
+        animation-name: riddat;
+        animation-duration: 2s;
+    }
+    .nuo{
+        width: 200px;
+        height:100px;
+        background:red;
+        position: relative;
+        animation-name:promi;
+        animation-duration: 10s;
+        animation-delay: 5s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+        animation-fill-mode: backwords;
+        
+    }
+    @keyframes riddat{
+        from{background-color: red;}
+        to {background-color: green;}
+    }
+    
+    @keyframes promi{
+       0%{
+        background-color:aqua;
+        left: 0px;
+        top:0px;
+       }
+       25%{
+        background-color:black;
+        left: 200px;
+        top:0px;
+       }
+       50%{
+        background-color:blue;
+        left: 200px;
+        top:200px;
+       }
+    }
+
+</style>

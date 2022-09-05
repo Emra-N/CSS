@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li> <a href="#">Home</a></li>
+        <li class="dd"> 
+            <a class="dr" href="#">about</a>
+            <div class="rt">
+            <a href="#">education</a>
+            <a href="#">sex</a>
+            <a href="#">makeout</a>
+            <a href="#">nation</a>
+        </div>
+            </li>
+        </li>
+        <li> <a href="#">block</a></li>
+        <li> <a href="#">our client</a></li>
+        <li> <a href="#">contact</a></li>
+    </ul>   
+  
+</body>
+</html>
+
+<style>
+    ul{
+        margin: 0%;
+        padding: 0%;
+        background-color: black;
+        overflow: auto;
+    }
+
+    ul li{
+float:left;
+list-style-type:none;
+
+
+    }
+    ul li a{
+        color: beige;
+        text-decoration: none;
+        text-transform:capitalize;
+        padding: 10px 12px;
+     display: inline-block;
+    }
+   .rt a{
+   display: block;
+   color: white;
+   }
+   .rt{
+    background-color: chocolate;
+  box-shadow: 0 5px 10px  0 white;
+  display: none;
+  position: absolute;
+   }
+
+   ul li :hover{
+    background-color: brown;
+    
+   }
+   .rt a:hover{
+    background-color: chartreuse;
+   }
+   .dd:hover .rt{
+    display: block;
+   }
+</style>
